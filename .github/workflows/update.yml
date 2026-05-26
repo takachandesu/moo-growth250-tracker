@@ -1,0 +1,38 @@
+name: Update Growth250 Data
+
+on:
+  schedule:
+    - cron: '30 6 * * 1-5'
+  workflow_dispatch:
+
+concurrency:
+  group: update-growth250
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas
+
+      - name: Fetch data
+        run: python scripts/fetch_data.py
+
+      - name: Upload to Lolipop (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.LOLIPOP_FTP_HOST }}
+          username: ${{ secrets.LOLIPOP_FTP_USER }}
+          password: ${{ secrets.LOLIPOP_FTP_PASSWORD }}
+          local-dir: ./public/
+          server-dir: ${{ secrets.LOLIPOP_FTP_PATH }}
+          state-name: .ftp-deploy-sync-state.json
