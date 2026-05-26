@@ -1,0 +1,1524 @@
+{
+  "metadata": {
+    "description": "東証グロース市場250指数 構成銘柄",
+    "source": "JPX定期選定 (2025年10月31日実施)",
+    "source_url": "https://www.jpx.co.jp/markets/indices/line-up/files/mei2_31_mothers.pdf",
+    "generated_at": "2026-05-26",
+    "total_count": 252,
+    "next_review": "2026-04-30頃に銘柄入替予定（半年毎の定期見直し）"
+  },
+  "tickers": [
+    {
+      "symbol": "1401.T",
+      "name_jp": "エムビーエス",
+      "code": "1401",
+      "stooq": "1401.jp"
+    },
+    {
+      "symbol": "1431.T",
+      "name_jp": "Ｌｉｂ Ｗｏｒｋ",
+      "code": "1431",
+      "stooq": "1431.jp"
+    },
+    {
+      "symbol": "1436.T",
+      "name_jp": "グリーンエナジー＆カンパニー",
+      "code": "1436",
+      "stooq": "1436.jp"
+    },
+    {
+      "symbol": "2158.T",
+      "name_jp": "ＦＲＯＮＴＥＯ",
+      "code": "2158",
+      "stooq": "2158.jp"
+    },
+    {
+      "symbol": "2160.T",
+      "name_jp": "ジーエヌアイグループ",
+      "code": "2160",
+      "stooq": "2160.jp"
+    },
+    {
+      "symbol": "2173.T",
+      "name_jp": "博展",
+      "code": "2173",
+      "stooq": "2173.jp"
+    },
+    {
+      "symbol": "2321.T",
+      "name_jp": "ソフトフロントホールディングス",
+      "code": "2321",
+      "stooq": "2321.jp"
+    },
+    {
+      "symbol": "2334.T",
+      "name_jp": "イオレ",
+      "code": "2334",
+      "stooq": "2334.jp"
+    },
+    {
+      "symbol": "2370.T",
+      "name_jp": "メディネット",
+      "code": "2370",
+      "stooq": "2370.jp"
+    },
+    {
+      "symbol": "2497.T",
+      "name_jp": "ユナイテッド",
+      "code": "2497",
+      "stooq": "2497.jp"
+    },
+    {
+      "symbol": "2586.T",
+      "name_jp": "フルッタフルッタ",
+      "code": "2586",
+      "stooq": "2586.jp"
+    },
+    {
+      "symbol": "2934.T",
+      "name_jp": "ジェイフロンティア",
+      "code": "2934",
+      "stooq": "2934.jp"
+    },
+    {
+      "symbol": "2936.T",
+      "name_jp": "ベースフード",
+      "code": "2936",
+      "stooq": "2936.jp"
+    },
+    {
+      "symbol": "2937.T",
+      "name_jp": "サンクゼール",
+      "code": "2937",
+      "stooq": "2937.jp"
+    },
+    {
+      "symbol": "2981.T",
+      "name_jp": "ランディックス",
+      "code": "2981",
+      "stooq": "2981.jp"
+    },
+    {
+      "symbol": "2983.T",
+      "name_jp": "アールプランナー",
+      "code": "2983",
+      "stooq": "2983.jp"
+    },
+    {
+      "symbol": "2986.T",
+      "name_jp": "ＬＡホールディングス",
+      "code": "2986",
+      "stooq": "2986.jp"
+    },
+    {
+      "symbol": "2998.T",
+      "name_jp": "クリアル",
+      "code": "2998",
+      "stooq": "2998.jp"
+    },
+    {
+      "symbol": "3063.T",
+      "name_jp": "ジェイグループホールディングス",
+      "code": "3063",
+      "stooq": "3063.jp"
+    },
+    {
+      "symbol": "3070.T",
+      "name_jp": "ジェリービーンズグループ",
+      "code": "3070",
+      "stooq": "3070.jp"
+    },
+    {
+      "symbol": "3133.T",
+      "name_jp": "海帆",
+      "code": "3133",
+      "stooq": "3133.jp"
+    },
+    {
+      "symbol": "3140.T",
+      "name_jp": "ＢＲＵＮＯ",
+      "code": "3140",
+      "stooq": "3140.jp"
+    },
+    {
+      "symbol": "3300.T",
+      "name_jp": "アンビション ＤＸ ホールディングス",
+      "code": "3300",
+      "stooq": "3300.jp"
+    },
+    {
+      "symbol": "3418.T",
+      "name_jp": "バルニバービ",
+      "code": "3418",
+      "stooq": "3418.jp"
+    },
+    {
+      "symbol": "3479.T",
+      "name_jp": "ティーケーピー",
+      "code": "3479",
+      "stooq": "3479.jp"
+    },
+    {
+      "symbol": "3491.T",
+      "name_jp": "ＧＡ ｔｅｃｈｎｏｌｏｇｉｅｓ",
+      "code": "3491",
+      "stooq": "3491.jp"
+    },
+    {
+      "symbol": "3541.T",
+      "name_jp": "農業総合研究所",
+      "code": "3541",
+      "stooq": "3541.jp"
+    },
+    {
+      "symbol": "3542.T",
+      "name_jp": "ベガコーポレーション",
+      "code": "3542",
+      "stooq": "3542.jp"
+    },
+    {
+      "symbol": "3556.T",
+      "name_jp": "リネットジャパングループ",
+      "code": "3556",
+      "stooq": "3556.jp"
+    },
+    {
+      "symbol": "3558.T",
+      "name_jp": "ジェイドグループ",
+      "code": "3558",
+      "stooq": "3558.jp"
+    },
+    {
+      "symbol": "3692.T",
+      "name_jp": "ＦＦＲＩセキュリティ",
+      "code": "3692",
+      "stooq": "3692.jp"
+    },
+    {
+      "symbol": "3695.T",
+      "name_jp": "ＧＭＯプロダクトプラットフォーム",
+      "code": "3695",
+      "stooq": "3695.jp"
+    },
+    {
+      "symbol": "3723.T",
+      "name_jp": "日本ファルコム",
+      "code": "3723",
+      "stooq": "3723.jp"
+    },
+    {
+      "symbol": "3773.T",
+      "name_jp": "アドバンスト・メディア",
+      "code": "3773",
+      "stooq": "3773.jp"
+    },
+    {
+      "symbol": "3777.T",
+      "name_jp": "環境フレンドリーホールディングス",
+      "code": "3777",
+      "stooq": "3777.jp"
+    },
+    {
+      "symbol": "3793.T",
+      "name_jp": "ドリコム",
+      "code": "3793",
+      "stooq": "3793.jp"
+    },
+    {
+      "symbol": "3900.T",
+      "name_jp": "クラウドワークス",
+      "code": "3900",
+      "stooq": "3900.jp"
+    },
+    {
+      "symbol": "3905.T",
+      "name_jp": "データセクション",
+      "code": "3905",
+      "stooq": "3905.jp"
+    },
+    {
+      "symbol": "3911.T",
+      "name_jp": "Ａｉｍｉｎｇ",
+      "code": "3911",
+      "stooq": "3911.jp"
+    },
+    {
+      "symbol": "3914.T",
+      "name_jp": "ＪＩＧ－ＳＡＷ",
+      "code": "3914",
+      "stooq": "3914.jp"
+    },
+    {
+      "symbol": "3979.T",
+      "name_jp": "うるる",
+      "code": "3979",
+      "stooq": "3979.jp"
+    },
+    {
+      "symbol": "3989.T",
+      "name_jp": "シェアリングテクノロジー",
+      "code": "3989",
+      "stooq": "3989.jp"
+    },
+    {
+      "symbol": "3991.T",
+      "name_jp": "ウォンテッドリー",
+      "code": "3991",
+      "stooq": "3991.jp"
+    },
+    {
+      "symbol": "4011.T",
+      "name_jp": "ヘッドウォータース",
+      "code": "4011",
+      "stooq": "4011.jp"
+    },
+    {
+      "symbol": "4013.T",
+      "name_jp": "勤次郎",
+      "code": "4013",
+      "stooq": "4013.jp"
+    },
+    {
+      "symbol": "4015.T",
+      "name_jp": "ペイクラウドホールディングス",
+      "code": "4015",
+      "stooq": "4015.jp"
+    },
+    {
+      "symbol": "4019.T",
+      "name_jp": "スタメン",
+      "code": "4019",
+      "stooq": "4019.jp"
+    },
+    {
+      "symbol": "4054.T",
+      "name_jp": "日本情報クリエイト",
+      "code": "4054",
+      "stooq": "4054.jp"
+    },
+    {
+      "symbol": "4055.T",
+      "name_jp": "ティアンドエスグループ",
+      "code": "4055",
+      "stooq": "4055.jp"
+    },
+    {
+      "symbol": "4056.T",
+      "name_jp": "ニューラルグループ",
+      "code": "4056",
+      "stooq": "4056.jp"
+    },
+    {
+      "symbol": "4058.T",
+      "name_jp": "トヨクモ",
+      "code": "4058",
+      "stooq": "4058.jp"
+    },
+    {
+      "symbol": "4165.T",
+      "name_jp": "プレイド",
+      "code": "4165",
+      "stooq": "4165.jp"
+    },
+    {
+      "symbol": "4168.T",
+      "name_jp": "ヤプリ",
+      "code": "4168",
+      "stooq": "4168.jp"
+    },
+    {
+      "symbol": "4169.T",
+      "name_jp": "ＥＮＥＣＨＡＮＧＥ",
+      "code": "4169",
+      "stooq": "4169.jp"
+    },
+    {
+      "symbol": "4175.T",
+      "name_jp": "ｃｏｌｙ",
+      "code": "4175",
+      "stooq": "4175.jp"
+    },
+    {
+      "symbol": "4176.T",
+      "name_jp": "ココナラ",
+      "code": "4176",
+      "stooq": "4176.jp"
+    },
+    {
+      "symbol": "4192.T",
+      "name_jp": "スパイダープラス",
+      "code": "4192",
+      "stooq": "4192.jp"
+    },
+    {
+      "symbol": "4258.T",
+      "name_jp": "網屋",
+      "code": "4258",
+      "stooq": "4258.jp"
+    },
+    {
+      "symbol": "4259.T",
+      "name_jp": "エクサウィザーズ",
+      "code": "4259",
+      "stooq": "4259.jp"
+    },
+    {
+      "symbol": "4263.T",
+      "name_jp": "サスメド",
+      "code": "4263",
+      "stooq": "4263.jp"
+    },
+    {
+      "symbol": "4264.T",
+      "name_jp": "セキュア",
+      "code": "4264",
+      "stooq": "4264.jp"
+    },
+    {
+      "symbol": "4308.T",
+      "name_jp": "Ｊストリーム",
+      "code": "4308",
+      "stooq": "4308.jp"
+    },
+    {
+      "symbol": "4371.T",
+      "name_jp": "コアコンセプト・テクノロジー",
+      "code": "4371",
+      "stooq": "4371.jp"
+    },
+    {
+      "symbol": "4374.T",
+      "name_jp": "ＲＯＢＯＴ ＰＡＹＭＥＮＴ",
+      "code": "4374",
+      "stooq": "4374.jp"
+    },
+    {
+      "symbol": "4375.T",
+      "name_jp": "セーフィー",
+      "code": "4375",
+      "stooq": "4375.jp"
+    },
+    {
+      "symbol": "4376.T",
+      "name_jp": "くふうカンパニーホールディングス",
+      "code": "4376",
+      "stooq": "4376.jp"
+    },
+    {
+      "symbol": "4377.T",
+      "name_jp": "ワンキャリア",
+      "code": "4377",
+      "stooq": "4377.jp"
+    },
+    {
+      "symbol": "4389.T",
+      "name_jp": "プロパティデータバンク",
+      "code": "4389",
+      "stooq": "4389.jp"
+    },
+    {
+      "symbol": "4393.T",
+      "name_jp": "バンク・オブ・イノベーション",
+      "code": "4393",
+      "stooq": "4393.jp"
+    },
+    {
+      "symbol": "4397.T",
+      "name_jp": "チームスピリット",
+      "code": "4397",
+      "stooq": "4397.jp"
+    },
+    {
+      "symbol": "4412.T",
+      "name_jp": "サイエンスアーツ",
+      "code": "4412",
+      "stooq": "4412.jp"
+    },
+    {
+      "symbol": "4414.T",
+      "name_jp": "フレクト",
+      "code": "4414",
+      "stooq": "4414.jp"
+    },
+    {
+      "symbol": "4417.T",
+      "name_jp": "グローバルセキュリティエキスパート",
+      "code": "4417",
+      "stooq": "4417.jp"
+    },
+    {
+      "symbol": "4418.T",
+      "name_jp": "ＪＤＳＣ",
+      "code": "4418",
+      "stooq": "4418.jp"
+    },
+    {
+      "symbol": "4419.T",
+      "name_jp": "Ｆｉｎａｔｅｘｔホールディングス",
+      "code": "4419",
+      "stooq": "4419.jp"
+    },
+    {
+      "symbol": "4425.T",
+      "name_jp": "Ｋｕｄａｎ",
+      "code": "4425",
+      "stooq": "4425.jp"
+    },
+    {
+      "symbol": "4431.T",
+      "name_jp": "スマレジ",
+      "code": "4431",
+      "stooq": "4431.jp"
+    },
+    {
+      "symbol": "4442.T",
+      "name_jp": "バルテス・ホールディングス",
+      "code": "4442",
+      "stooq": "4442.jp"
+    },
+    {
+      "symbol": "4448.T",
+      "name_jp": "ｋｕｂｅｌｌ",
+      "code": "4448",
+      "stooq": "4448.jp"
+    },
+    {
+      "symbol": "4475.T",
+      "name_jp": "ＨＥＮＮＧＥ",
+      "code": "4475",
+      "stooq": "4475.jp"
+    },
+    {
+      "symbol": "4477.T",
+      "name_jp": "ＢＡＳＥ",
+      "code": "4477",
+      "stooq": "4477.jp"
+    },
+    {
+      "symbol": "4478.T",
+      "name_jp": "フリー",
+      "code": "4478",
+      "stooq": "4478.jp"
+    },
+    {
+      "symbol": "4479.T",
+      "name_jp": "マクアケ",
+      "code": "4479",
+      "stooq": "4479.jp"
+    },
+    {
+      "symbol": "4482.T",
+      "name_jp": "ウィルズ",
+      "code": "4482",
+      "stooq": "4482.jp"
+    },
+    {
+      "symbol": "4488.T",
+      "name_jp": "ＡＩ ｉｎｓｉｄｅ",
+      "code": "4488",
+      "stooq": "4488.jp"
+    },
+    {
+      "symbol": "4493.T",
+      "name_jp": "サイバーセキュリティクラウド",
+      "code": "4493",
+      "stooq": "4493.jp"
+    },
+    {
+      "symbol": "4495.T",
+      "name_jp": "アイキューブドシステムズ",
+      "code": "4495",
+      "stooq": "4495.jp"
+    },
+    {
+      "symbol": "4498.T",
+      "name_jp": "サイバートラスト",
+      "code": "4498",
+      "stooq": "4498.jp"
+    },
+    {
+      "symbol": "4563.T",
+      "name_jp": "アンジェス",
+      "code": "4563",
+      "stooq": "4563.jp"
+    },
+    {
+      "symbol": "4571.T",
+      "name_jp": "ＮＡＮＯ ＭＲＮＡ",
+      "code": "4571",
+      "stooq": "4571.jp"
+    },
+    {
+      "symbol": "4575.T",
+      "name_jp": "キャンバス",
+      "code": "4575",
+      "stooq": "4575.jp"
+    },
+    {
+      "symbol": "4579.T",
+      "name_jp": "ラクオリア創薬",
+      "code": "4579",
+      "stooq": "4579.jp"
+    },
+    {
+      "symbol": "4583.T",
+      "name_jp": "カイオム・バイオサイエンス",
+      "code": "4583",
+      "stooq": "4583.jp"
+    },
+    {
+      "symbol": "4584.T",
+      "name_jp": "キッズウェル・バイオ",
+      "code": "4584",
+      "stooq": "4584.jp"
+    },
+    {
+      "symbol": "4588.T",
+      "name_jp": "オンコリスバイオファーマ",
+      "code": "4588",
+      "stooq": "4588.jp"
+    },
+    {
+      "symbol": "4592.T",
+      "name_jp": "サンバイオ",
+      "code": "4592",
+      "stooq": "4592.jp"
+    },
+    {
+      "symbol": "4593.T",
+      "name_jp": "ヘリオス",
+      "code": "4593",
+      "stooq": "4593.jp"
+    },
+    {
+      "symbol": "4594.T",
+      "name_jp": "ブライトパス・バイオ",
+      "code": "4594",
+      "stooq": "4594.jp"
+    },
+    {
+      "symbol": "4597.T",
+      "name_jp": "ソレイジア・ファーマ",
+      "code": "4597",
+      "stooq": "4597.jp"
+    },
+    {
+      "symbol": "4599.T",
+      "name_jp": "ステムリム",
+      "code": "4599",
+      "stooq": "4599.jp"
+    },
+    {
+      "symbol": "4772.T",
+      "name_jp": "ＳＭ ＥＮＴＥＲＴＡＩＮＭＥＮＴ ＪＡＰＡＮ",
+      "code": "4772",
+      "stooq": "4772.jp"
+    },
+    {
+      "symbol": "4811.T",
+      "name_jp": "ドリーム・アーツ",
+      "code": "4811",
+      "stooq": "4811.jp"
+    },
+    {
+      "symbol": "4888.T",
+      "name_jp": "ステラファーマ",
+      "code": "4888",
+      "stooq": "4888.jp"
+    },
+    {
+      "symbol": "4889.T",
+      "name_jp": "レナサイエンス",
+      "code": "4889",
+      "stooq": "4889.jp"
+    },
+    {
+      "symbol": "4890.T",
+      "name_jp": "坪田ラボ",
+      "code": "4890",
+      "stooq": "4890.jp"
+    },
+    {
+      "symbol": "4894.T",
+      "name_jp": "クオリプス",
+      "code": "4894",
+      "stooq": "4894.jp"
+    },
+    {
+      "symbol": "4978.T",
+      "name_jp": "リプロセル",
+      "code": "4978",
+      "stooq": "4978.jp"
+    },
+    {
+      "symbol": "5026.T",
+      "name_jp": "トリプルアイズ",
+      "code": "5026",
+      "stooq": "5026.jp"
+    },
+    {
+      "symbol": "5027.T",
+      "name_jp": "ＡｎｙＭｉｎｄ Ｇｒｏｕｐ",
+      "code": "5027",
+      "stooq": "5027.jp"
+    },
+    {
+      "symbol": "5034.T",
+      "name_jp": "ｕｎｅｒｒｙ",
+      "code": "5034",
+      "stooq": "5034.jp"
+    },
+    {
+      "symbol": "5038.T",
+      "name_jp": "ｅＷｅＬＬ",
+      "code": "5038",
+      "stooq": "5038.jp"
+    },
+    {
+      "symbol": "5132.T",
+      "name_jp": "ｐｌｕｓｚｅｒｏ",
+      "code": "5132",
+      "stooq": "5132.jp"
+    },
+    {
+      "symbol": "5136.T",
+      "name_jp": "ｔｒｉｐｌａ",
+      "code": "5136",
+      "stooq": "5136.jp"
+    },
+    {
+      "symbol": "5137.T",
+      "name_jp": "スマートドライブ",
+      "code": "5137",
+      "stooq": "5137.jp"
+    },
+    {
+      "symbol": "5139.T",
+      "name_jp": "オープンワーク",
+      "code": "5139",
+      "stooq": "5139.jp"
+    },
+    {
+      "symbol": "5243.T",
+      "name_jp": "ｎｏｔｅ",
+      "code": "5243",
+      "stooq": "5243.jp"
+    },
+    {
+      "symbol": "5244.T",
+      "name_jp": "ｊｉｇ．ｊｐ",
+      "code": "5244",
+      "stooq": "5244.jp"
+    },
+    {
+      "symbol": "5246.T",
+      "name_jp": "ＥＬＥＭＥＮＴＳ",
+      "code": "5246",
+      "stooq": "5246.jp"
+    },
+    {
+      "symbol": "5248.T",
+      "name_jp": "テクノロジーズ",
+      "code": "5248",
+      "stooq": "5248.jp"
+    },
+    {
+      "symbol": "5253.T",
+      "name_jp": "カバー",
+      "code": "5253",
+      "stooq": "5253.jp"
+    },
+    {
+      "symbol": "5254.T",
+      "name_jp": "Ａｒｅｎｔ",
+      "code": "5254",
+      "stooq": "5254.jp"
+    },
+    {
+      "symbol": "5255.T",
+      "name_jp": "モンスターラボ",
+      "code": "5255",
+      "stooq": "5255.jp"
+    },
+    {
+      "symbol": "5258.T",
+      "name_jp": "トランザクション・メディア・ネットワークス",
+      "code": "5258",
+      "stooq": "5258.jp"
+    },
+    {
+      "symbol": "5259.T",
+      "name_jp": "ＢＢＤイニシアティブ",
+      "code": "5259",
+      "stooq": "5259.jp"
+    },
+    {
+      "symbol": "5532.T",
+      "name_jp": "リアルゲイト",
+      "code": "5532",
+      "stooq": "5532.jp"
+    },
+    {
+      "symbol": "5570.T",
+      "name_jp": "ジェノバ",
+      "code": "5570",
+      "stooq": "5570.jp"
+    },
+    {
+      "symbol": "5572.T",
+      "name_jp": "Ｒｉｄｇｅ－ｉ",
+      "code": "5572",
+      "stooq": "5572.jp"
+    },
+    {
+      "symbol": "5574.T",
+      "name_jp": "ＡＢＥＪＡ",
+      "code": "5574",
+      "stooq": "5574.jp"
+    },
+    {
+      "symbol": "5578.T",
+      "name_jp": "ＡＲアドバンストテクノロジ",
+      "code": "5578",
+      "stooq": "5578.jp"
+    },
+    {
+      "symbol": "5582.T",
+      "name_jp": "グリッド",
+      "code": "5582",
+      "stooq": "5582.jp"
+    },
+    {
+      "symbol": "5586.T",
+      "name_jp": "Ｌａｂｏｒｏ．ＡＩ",
+      "code": "5586",
+      "stooq": "5586.jp"
+    },
+    {
+      "symbol": "5588.T",
+      "name_jp": "ファーストアカウンティング",
+      "code": "5588",
+      "stooq": "5588.jp"
+    },
+    {
+      "symbol": "5590.T",
+      "name_jp": "ネットスターズ",
+      "code": "5590",
+      "stooq": "5590.jp"
+    },
+    {
+      "symbol": "5592.T",
+      "name_jp": "くすりの窓口",
+      "code": "5592",
+      "stooq": "5592.jp"
+    },
+    {
+      "symbol": "5595.T",
+      "name_jp": "ＱＰＳ研究所",
+      "code": "5595",
+      "stooq": "5595.jp"
+    },
+    {
+      "symbol": "5597.T",
+      "name_jp": "ブルーイノベーション",
+      "code": "5597",
+      "stooq": "5597.jp"
+    },
+    {
+      "symbol": "5621.T",
+      "name_jp": "ヒューマンテクノロジーズ",
+      "code": "5621",
+      "stooq": "5621.jp"
+    },
+    {
+      "symbol": "5834.T",
+      "name_jp": "ＳＢＩリーシングサービス",
+      "code": "5834",
+      "stooq": "5834.jp"
+    },
+    {
+      "symbol": "5842.T",
+      "name_jp": "インテグラル",
+      "code": "5842",
+      "stooq": "5842.jp"
+    },
+    {
+      "symbol": "5888.T",
+      "name_jp": "ＤＡＩＷＡ ＣＹＣＬＥ",
+      "code": "5888",
+      "stooq": "5888.jp"
+    },
+    {
+      "symbol": "5892.T",
+      "name_jp": "ｙｕｔｏｒｉ",
+      "code": "5892",
+      "stooq": "5892.jp"
+    },
+    {
+      "symbol": "6027.T",
+      "name_jp": "弁護士ドットコム",
+      "code": "6027",
+      "stooq": "6027.jp"
+    },
+    {
+      "symbol": "6030.T",
+      "name_jp": "アドベンチャー",
+      "code": "6030",
+      "stooq": "6030.jp"
+    },
+    {
+      "symbol": "6031.T",
+      "name_jp": "ＺＥＴＡ",
+      "code": "6031",
+      "stooq": "6031.jp"
+    },
+    {
+      "symbol": "6039.T",
+      "name_jp": "日本動物高度医療センター",
+      "code": "6039",
+      "stooq": "6039.jp"
+    },
+    {
+      "symbol": "6040.T",
+      "name_jp": "日本スキー場開発",
+      "code": "6040",
+      "stooq": "6040.jp"
+    },
+    {
+      "symbol": "6045.T",
+      "name_jp": "レントラックス",
+      "code": "6045",
+      "stooq": "6045.jp"
+    },
+    {
+      "symbol": "6086.T",
+      "name_jp": "シンメンテホールディングス",
+      "code": "6086",
+      "stooq": "6086.jp"
+    },
+    {
+      "symbol": "6094.T",
+      "name_jp": "フリークアウト・ホールディングス",
+      "code": "6094",
+      "stooq": "6094.jp"
+    },
+    {
+      "symbol": "6176.T",
+      "name_jp": "ブランジスタ",
+      "code": "6176",
+      "stooq": "6176.jp"
+    },
+    {
+      "symbol": "6180.T",
+      "name_jp": "ＧＭＯメディア",
+      "code": "6180",
+      "stooq": "6180.jp"
+    },
+    {
+      "symbol": "6224.T",
+      "name_jp": "ＪＲＣ",
+      "code": "6224",
+      "stooq": "6224.jp"
+    },
+    {
+      "symbol": "6232.T",
+      "name_jp": "ＡＣＳＬ",
+      "code": "6232",
+      "stooq": "6232.jp"
+    },
+    {
+      "symbol": "6255.T",
+      "name_jp": "エヌ・ピー・シー",
+      "code": "6255",
+      "stooq": "6255.jp"
+    },
+    {
+      "symbol": "6521.T",
+      "name_jp": "オキサイド",
+      "code": "6521",
+      "stooq": "6521.jp"
+    },
+    {
+      "symbol": "6554.T",
+      "name_jp": "エスユーエス",
+      "code": "6554",
+      "stooq": "6554.jp"
+    },
+    {
+      "symbol": "6557.T",
+      "name_jp": "ＡＩＡＩグループ",
+      "code": "6557",
+      "stooq": "6557.jp"
+    },
+    {
+      "symbol": "6561.T",
+      "name_jp": "ＨＡＮＡＴＯＵＲ ＪＡＰＡＮ",
+      "code": "6561",
+      "stooq": "6561.jp"
+    },
+    {
+      "symbol": "6562.T",
+      "name_jp": "ジーニー",
+      "code": "6562",
+      "stooq": "6562.jp"
+    },
+    {
+      "symbol": "6574.T",
+      "name_jp": "コンヴァノ",
+      "code": "6574",
+      "stooq": "6574.jp"
+    },
+    {
+      "symbol": "6580.T",
+      "name_jp": "ライトアップ",
+      "code": "6580",
+      "stooq": "6580.jp"
+    },
+    {
+      "symbol": "6613.T",
+      "name_jp": "ＱＤレーザ",
+      "code": "6613",
+      "stooq": "6613.jp"
+    },
+    {
+      "symbol": "7047.T",
+      "name_jp": "ポート",
+      "code": "7047",
+      "stooq": "7047.jp"
+    },
+    {
+      "symbol": "7048.T",
+      "name_jp": "ベルトラ",
+      "code": "7048",
+      "stooq": "7048.jp"
+    },
+    {
+      "symbol": "7050.T",
+      "name_jp": "フロンティアインターナショナル",
+      "code": "7050",
+      "stooq": "7050.jp"
+    },
+    {
+      "symbol": "7061.T",
+      "name_jp": "日本ホスピスホールディングス",
+      "code": "7061",
+      "stooq": "7061.jp"
+    },
+    {
+      "symbol": "7068.T",
+      "name_jp": "フィードフォースグループ",
+      "code": "7068",
+      "stooq": "7068.jp"
+    },
+    {
+      "symbol": "7082.T",
+      "name_jp": "ジモティー",
+      "code": "7082",
+      "stooq": "7082.jp"
+    },
+    {
+      "symbol": "7094.T",
+      "name_jp": "ＮｅｘＴｏｎｅ",
+      "code": "7094",
+      "stooq": "7094.jp"
+    },
+    {
+      "symbol": "7096.T",
+      "name_jp": "ステムセル研究所",
+      "code": "7096",
+      "stooq": "7096.jp"
+    },
+    {
+      "symbol": "7097.T",
+      "name_jp": "さくらさくプラス",
+      "code": "7097",
+      "stooq": "7097.jp"
+    },
+    {
+      "symbol": "7110.T",
+      "name_jp": "クラシコム",
+      "code": "7110",
+      "stooq": "7110.jp"
+    },
+    {
+      "symbol": "7119.T",
+      "name_jp": "ハルメクホールディングス",
+      "code": "7119",
+      "stooq": "7119.jp"
+    },
+    {
+      "symbol": "7133.T",
+      "name_jp": "ＨＹＵＧＡ ＰＲＩＭＡＲＹ ＣＡＲＥ",
+      "code": "7133",
+      "stooq": "7133.jp"
+    },
+    {
+      "symbol": "7317.T",
+      "name_jp": "松屋アールアンドディ",
+      "code": "7317",
+      "stooq": "7317.jp"
+    },
+    {
+      "symbol": "7318.T",
+      "name_jp": "セレンディップ・ホールディングス",
+      "code": "7318",
+      "stooq": "7318.jp"
+    },
+    {
+      "symbol": "7320.T",
+      "name_jp": "Ｓｏｌｖｖｙ",
+      "code": "7320",
+      "stooq": "7320.jp"
+    },
+    {
+      "symbol": "7326.T",
+      "name_jp": "ＳＢＩインシュアランスグループ",
+      "code": "7326",
+      "stooq": "7326.jp"
+    },
+    {
+      "symbol": "7352.T",
+      "name_jp": "ＴＷＯＳＴＯＮＥ＆Ｓｏｎｓ",
+      "code": "7352",
+      "stooq": "7352.jp"
+    },
+    {
+      "symbol": "7373.T",
+      "name_jp": "アイドマ・ホールディングス",
+      "code": "7373",
+      "stooq": "7373.jp"
+    },
+    {
+      "symbol": "7374.T",
+      "name_jp": "コンフィデンス・インターワークス",
+      "code": "7374",
+      "stooq": "7374.jp"
+    },
+    {
+      "symbol": "7378.T",
+      "name_jp": "アシロ",
+      "code": "7378",
+      "stooq": "7378.jp"
+    },
+    {
+      "symbol": "7409.T",
+      "name_jp": "ＡｅｒｏＥｄｇｅ",
+      "code": "7409",
+      "stooq": "7409.jp"
+    },
+    {
+      "symbol": "7685.T",
+      "name_jp": "ＢｕｙＳｅｌｌ Ｔｅｃｈｎｏｌｏｇｉｅｓ",
+      "code": "7685",
+      "stooq": "7685.jp"
+    },
+    {
+      "symbol": "7774.T",
+      "name_jp": "ジャパン・ティッシュエンジニアリング",
+      "code": "7774",
+      "stooq": "7774.jp"
+    },
+    {
+      "symbol": "7776.T",
+      "name_jp": "セルシード",
+      "code": "7776",
+      "stooq": "7776.jp"
+    },
+    {
+      "symbol": "7777.T",
+      "name_jp": "スリー・ディー・マトリックス",
+      "code": "7777",
+      "stooq": "7777.jp"
+    },
+    {
+      "symbol": "7779.T",
+      "name_jp": "ＣＹＢＥＲＤＹＮＥ",
+      "code": "7779",
+      "stooq": "7779.jp"
+    },
+    {
+      "symbol": "7792.T",
+      "name_jp": "コラントッテ",
+      "code": "7792",
+      "stooq": "7792.jp"
+    },
+    {
+      "symbol": "7803.T",
+      "name_jp": "ブシロード",
+      "code": "7803",
+      "stooq": "7803.jp"
+    },
+    {
+      "symbol": "7806.T",
+      "name_jp": "ＭＴＧ",
+      "code": "7806",
+      "stooq": "7806.jp"
+    },
+    {
+      "symbol": "9158.T",
+      "name_jp": "シーユーシー",
+      "code": "9158",
+      "stooq": "9158.jp"
+    },
+    {
+      "symbol": "9162.T",
+      "name_jp": "ブリーチ",
+      "code": "9162",
+      "stooq": "9162.jp"
+    },
+    {
+      "symbol": "9163.T",
+      "name_jp": "ナレルグループ",
+      "code": "9163",
+      "stooq": "9163.jp"
+    },
+    {
+      "symbol": "9166.T",
+      "name_jp": "ＧＥＮＤＡ",
+      "code": "9166",
+      "stooq": "9166.jp"
+    },
+    {
+      "symbol": "9168.T",
+      "name_jp": "ライズ・コンサルティング・グループ",
+      "code": "9168",
+      "stooq": "9168.jp"
+    },
+    {
+      "symbol": "9204.T",
+      "name_jp": "スカイマーク",
+      "code": "9204",
+      "stooq": "9204.jp"
+    },
+    {
+      "symbol": "9211.T",
+      "name_jp": "エフ・コード",
+      "code": "9211",
+      "stooq": "9211.jp"
+    },
+    {
+      "symbol": "9227.T",
+      "name_jp": "マイクロ波化学",
+      "code": "9227",
+      "stooq": "9227.jp"
+    },
+    {
+      "symbol": "9235.T",
+      "name_jp": "売れるネット広告社グループ",
+      "code": "9235",
+      "stooq": "9235.jp"
+    },
+    {
+      "symbol": "9245.T",
+      "name_jp": "リベロ",
+      "code": "9245",
+      "stooq": "9245.jp"
+    },
+    {
+      "symbol": "9251.T",
+      "name_jp": "ＡＢ＆Ｃｏｍｐａｎｙ",
+      "code": "9251",
+      "stooq": "9251.jp"
+    },
+    {
+      "symbol": "9252.T",
+      "name_jp": "ラストワンマイル",
+      "code": "9252",
+      "stooq": "9252.jp"
+    },
+    {
+      "symbol": "9270.T",
+      "name_jp": "バリュエンスホールディングス",
+      "code": "9270",
+      "stooq": "9270.jp"
+    },
+    {
+      "symbol": "9272.T",
+      "name_jp": "ブティックス",
+      "code": "9272",
+      "stooq": "9272.jp"
+    },
+    {
+      "symbol": "9337.T",
+      "name_jp": "トリドリ",
+      "code": "9337",
+      "stooq": "9337.jp"
+    },
+    {
+      "symbol": "9338.T",
+      "name_jp": "ＩＮＦＯＲＩＣＨ",
+      "code": "9338",
+      "stooq": "9338.jp"
+    },
+    {
+      "symbol": "9343.T",
+      "name_jp": "アイビス",
+      "code": "9343",
+      "stooq": "9343.jp"
+    },
+    {
+      "symbol": "9348.T",
+      "name_jp": "ｉｓｐａｃｅ",
+      "code": "9348",
+      "stooq": "9348.jp"
+    },
+    {
+      "symbol": "9467.T",
+      "name_jp": "アルファポリス",
+      "code": "9467",
+      "stooq": "9467.jp"
+    },
+    {
+      "symbol": "9553.T",
+      "name_jp": "マイクロアド",
+      "code": "9553",
+      "stooq": "9553.jp"
+    },
+    {
+      "symbol": "9554.T",
+      "name_jp": "ＡＶｉＣ",
+      "code": "9554",
+      "stooq": "9554.jp"
+    },
+    {
+      "symbol": "9556.T",
+      "name_jp": "ＩＮＴＬＯＯＰ",
+      "code": "9556",
+      "stooq": "9556.jp"
+    },
+    {
+      "symbol": "9558.T",
+      "name_jp": "ジャパニアス",
+      "code": "9558",
+      "stooq": "9558.jp"
+    },
+    {
+      "symbol": "9560.T",
+      "name_jp": "プログリット",
+      "code": "9560",
+      "stooq": "9560.jp"
+    },
+    {
+      "symbol": "135A.T",
+      "name_jp": "ＶＲＡＩＮ Ｓｏｌｕｔｉｏｎ",
+      "code": "135A",
+      "stooq": "135a.jp"
+    },
+    {
+      "symbol": "141A.T",
+      "name_jp": "トライアルホールディングス",
+      "code": "141A",
+      "stooq": "141a.jp"
+    },
+    {
+      "symbol": "147A.T",
+      "name_jp": "ソラコム",
+      "code": "147A",
+      "stooq": "147a.jp"
+    },
+    {
+      "symbol": "153A.T",
+      "name_jp": "カウリス",
+      "code": "153A",
+      "stooq": "153a.jp"
+    },
+    {
+      "symbol": "155A.T",
+      "name_jp": "情報戦略テクノロジー",
+      "code": "155A",
+      "stooq": "155a.jp"
+    },
+    {
+      "symbol": "165A.T",
+      "name_jp": "ＳＢＩレオスひふみ",
+      "code": "165A",
+      "stooq": "165a.jp"
+    },
+    {
+      "symbol": "166A.T",
+      "name_jp": "タスキホールディングス",
+      "code": "166A",
+      "stooq": "166a.jp"
+    },
+    {
+      "symbol": "176A.T",
+      "name_jp": "レジル",
+      "code": "176A",
+      "stooq": "176a.jp"
+    },
+    {
+      "symbol": "186A.T",
+      "name_jp": "アストロスケールホールディングス",
+      "code": "186A",
+      "stooq": "186a.jp"
+    },
+    {
+      "symbol": "190A.T",
+      "name_jp": "Ｃｈｏｒｄｉａ Ｔｈｅｒａｐｅｕｔｉｃｓ",
+      "code": "190A",
+      "stooq": "190a.jp"
+    },
+    {
+      "symbol": "202A.T",
+      "name_jp": "豆蔵",
+      "code": "202A",
+      "stooq": "202a.jp"
+    },
+    {
+      "symbol": "215A.T",
+      "name_jp": "タイミー",
+      "code": "215A",
+      "stooq": "215a.jp"
+    },
+    {
+      "symbol": "218A.T",
+      "name_jp": "Ｌｉｂｅｒａｗａｒｅ",
+      "code": "218A",
+      "stooq": "218a.jp"
+    },
+    {
+      "symbol": "219A.T",
+      "name_jp": "Ｈｅａｒｔｓｅｅｄ",
+      "code": "219A",
+      "stooq": "219a.jp"
+    },
+    {
+      "symbol": "247A.T",
+      "name_jp": "Ａｉロボティクス",
+      "code": "247A",
+      "stooq": "247a.jp"
+    },
+    {
+      "symbol": "264A.T",
+      "name_jp": "Ｓｃｈｏｏ",
+      "code": "264A",
+      "stooq": "264a.jp"
+    },
+    {
+      "symbol": "276A.T",
+      "name_jp": "ククレブ・アドバイザーズ",
+      "code": "276A",
+      "stooq": "276a.jp"
+    },
+    {
+      "symbol": "277A.T",
+      "name_jp": "グロービング",
+      "code": "277A",
+      "stooq": "277a.jp"
+    },
+    {
+      "symbol": "278A.T",
+      "name_jp": "Ｔｅｒｒａ Ｄｒｏｎｅ",
+      "code": "278A",
+      "stooq": "278a.jp"
+    },
+    {
+      "symbol": "286A.T",
+      "name_jp": "ユカリア",
+      "code": "286A",
+      "stooq": "286a.jp"
+    },
+    {
+      "symbol": "290A.T",
+      "name_jp": "Ｓｙｎｓｐｅｃｔｉｖｅ",
+      "code": "290A",
+      "stooq": "290a.jp"
+    },
+    {
+      "symbol": "296A.T",
+      "name_jp": "令和アカウンティング・ホールディングス",
+      "code": "296A",
+      "stooq": "296a.jp"
+    },
+    {
+      "symbol": "299A.T",
+      "name_jp": "クラシル",
+      "code": "299A",
+      "stooq": "299a.jp"
+    },
+    {
+      "symbol": "319A.T",
+      "name_jp": "技術承継機構",
+      "code": "319A",
+      "stooq": "319a.jp"
+    },
+    {
+      "symbol": "325A.T",
+      "name_jp": "ＴＥＮＴＩＡＬ",
+      "code": "325A",
+      "stooq": "325a.jp"
+    },
+    {
+      "symbol": "332A.T",
+      "name_jp": "ミーク",
+      "code": "332A",
+      "stooq": "332a.jp"
+    },
+    {
+      "symbol": "336A.T",
+      "name_jp": "ダイナミックマッププラットフォーム",
+      "code": "336A",
+      "stooq": "336a.jp"
+    },
+    {
+      "symbol": "338A.T",
+      "name_jp": "ＺｅｎｍｕＴｅｃｈ",
+      "code": "338A",
+      "stooq": "338a.jp"
+    },
+    {
+      "symbol": "339A.T",
+      "name_jp": "プログレス・テクノロジーズ グループ",
+      "code": "339A",
+      "stooq": "339a.jp"
+    },
+    {
+      "symbol": "341A.T",
+      "name_jp": "トヨコー",
+      "code": "341A",
+      "stooq": "341a.jp"
+    },
+    {
+      "symbol": "350A.T",
+      "name_jp": "デジタルグリッド",
+      "code": "350A",
+      "stooq": "350a.jp"
+    },
+    {
+      "symbol": "352A.T",
+      "name_jp": "ＬＯＩＶＥ",
+      "code": "352A",
+      "stooq": "352a.jp"
+    },
+    {
+      "symbol": "366A.T",
+      "name_jp": "ウェルネス・コミュニケーションズ",
+      "code": "366A",
+      "stooq": "366a.jp"
+    },
+    {
+      "symbol": "369A.T",
+      "name_jp": "エータイ",
+      "code": "369A",
+      "stooq": "369a.jp"
+    },
+    {
+      "symbol": "378A.T",
+      "name_jp": "ヒット",
+      "code": "378A",
+      "stooq": "378a.jp"
+    },
+    {
+      "symbol": "402A.T",
+      "name_jp": "アクセルスペースホールディングス",
+      "code": "402A",
+      "stooq": "402a.jp"
+    },
+    {
+      "symbol": "410A.T",
+      "name_jp": "ＧＭＯコマース",
+      "code": "410A",
+      "stooq": "410a.jp"
+    }
+  ]
+}
