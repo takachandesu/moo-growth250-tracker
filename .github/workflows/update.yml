@@ -1,37 +1,35 @@
-name: Update Growth250 Data
+name: Post Growth250 to X
 
 on:
   schedule:
-    - cron: '30 6 * * 1-5'
+    - cron: '35 6 * * 1-5'
   workflow_dispatch:
 
 concurrency:
-  group: update-growth250
+  group: post-growth250-to-x
   cancel-in-progress: false
 
 jobs:
-  update:
+  post:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v4
+    timeout-minutes: 5
 
-      - uses: actions/setup-python@v5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install yfinance pandas
+        run: pip install --quiet requests tweepy
 
-      - name: Fetch data
-        run: python scripts/fetch_data.py
-
-      - name: Upload to Lolipop (FTP)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.LOLIPOP_FTP_HOST }}
-          username: ${{ secrets.LOLIPOP_FTP_USER }}
-          password: ${{ secrets.LOLIPOP_FTP_PASSWORD }}
-          local-dir: ./public/
-          server-dir: ${{ secrets.LOLIPOP_FTP_PATH }}
-          state-name: .ftp-deploy-sync-state.json
+      - name: Post to X
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: python scripts/post_growth250_to_x.py
