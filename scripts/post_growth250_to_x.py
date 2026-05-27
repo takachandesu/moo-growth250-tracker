@@ -85,8 +85,13 @@ NAME_SHORT = {
 
 
 def fetch_data():
-    """ロリポップから growth250-data.json を取得"""
-    r = requests.get(JSON_URL, timeout=15)
+    """ロリポップから growth250-data.json を取得（WAF回避のためUser-Agent指定）"""
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
+    }
+    r = requests.get(JSON_URL, timeout=15, headers=headers)
     r.raise_for_status()
     return r.json()
 
