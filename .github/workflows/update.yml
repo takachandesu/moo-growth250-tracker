@@ -34,4 +34,4 @@ jobs:
           password: ${{ secrets.LOLIPOP_FTP_PASSWORD }}
           local-dir: ./public/
           server-dir: ${{ secrets.LOLIPOP_FTP_PATH }}
-          state-name: .ftp-deploy-sync-state.json
+          state-name: .ftp-deploy-growth250.json
