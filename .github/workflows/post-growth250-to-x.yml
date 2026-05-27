@@ -1,8 +1,9 @@
 name: Post Growth250 to X
 
 on:
-  schedule:
-    - cron: '35 6 * * 1-5'
+  workflow_run:
+    workflows: ["Update Growth250 Data"]
+    types: [completed]
   workflow_dispatch:
 
 concurrency:
@@ -13,6 +14,8 @@ jobs:
   post:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    # update.yml が成功した時だけ実行（失敗時はスキップ）
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - name: Checkout repository
