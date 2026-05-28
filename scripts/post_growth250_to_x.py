@@ -134,7 +134,8 @@ def _weighted_length(text: str) -> int:
 def _build_tweet_with_topn(data, n: int) -> str:
     """TOP n件で組み立て"""
     now = datetime.now(JST)
-    date_str = f"{now.month}/{now.day}"
+    # ★変更点1: 日付に時刻も付ける（毎回少しだけ違う本文になり、Xの「重複」判定を避ける）
+    date_str = f"{now.month}/{now.day} {now.hour:02d}:{now.minute:02d}"
 
     lines = [f"📊グロース250 {date_str}", "", f"📈上昇TOP{n}"]
     for i, item in enumerate(data["best"][:n], 1):
@@ -206,6 +207,13 @@ def main():
         result = post_to_x(tweet_text)
         print(f"[info] posted successfully: id={result.data.get('id') if result.data else 'unknown'}", flush=True)
         return 0
+    # ★変更点2: 「重複」で弾かれた場合は、赤バツにせず正常終了する（保険）
+    except tweepy.errors.Forbidden as e:
+        if "duplicate" in str(e).lower():
+            print("[info] 同じ内容が既に投稿済みのためスキップしました（重複＝実質成功扱い）", flush=True)
+            return 0
+        print(f"[error] post failed: {e}", file=sys.stderr, flush=True)
+        return 1
     except Exception as e:
         print(f"[error] post failed: {e}", file=sys.stderr, flush=True)
         return 1
