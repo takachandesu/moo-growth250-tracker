@@ -110,14 +110,17 @@ def format_line(rank, item):
     name = short_name(item.get("name_jp", ""))
     pct = item.get("change_pct", 0.0)
     sign = "+" if pct >= 0 else ""
-    return f"{rank}. {code} {name} {sign}{pct:.2f}%"
+    return f"{rank}. {code} {name} {sign}{pct:.1f}%"
 
 
 def _weighted_length(text: str) -> int:
     """Twitter weighted-length (V2) 近似: ASCII/Latin-1 を1、他は2でカウント。
-    実測でTwitter公式アルゴリズムと一致する範囲。"""
+    URLはX側でt.co短縮され23文字固定扱いになるので、計測もそれに合わせる。"""
+    import re as _re
+    # URLを23文字分のプレースホルダに置換してから数える
+    text_for_count = _re.sub(r"https?://\S+", "X" * 23, text)
     n = 0
-    for c in text:
+    for c in text_for_count:
         if ord(c) < 0x100:
             n += 1
         elif 0x2000 <= ord(c) <= 0x200D or 0x2010 <= ord(c) <= 0x201F:
