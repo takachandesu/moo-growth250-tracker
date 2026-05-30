@@ -105,12 +105,15 @@ def is_data_today(updated_at: str) -> bool:
 
 
 def weighted_len(text: str) -> int:
-    """Xの重み付き文字数(ざっくり): ASCIIは1、それ以外(全角等)は2。"""
-    return sum(1 if ord(ch) < 0x1100 else 2 for ch in text)
+    """Xの重み付き文字数(ざっくり): ASCIIは1、それ以外(全角等)は2。
+    URLはX側でt.coに短縮され23固定になるので、計測でも23扱いにする。"""
+    # URLを23文字分のプレースホルダに置換してから数える
+    text_for_count = re.sub(r"https?://\S+", "X" * 23, text)
+    return sum(1 if ord(ch) < 0x1100 else 2 for ch in text_for_count)
 
 
 # --------------------------------------------------------------------------
-# 2. 概況の生成(Claude) — ブログ用とツイート用を一括生成
+# 2. 概況の生成(Claude + ウェブ検索) — ブログ用とツイート用を一括生成
 # --------------------------------------------------------------------------
 def _extract_text(resp) -> str:
     return "".join(b.text for b in resp.content if getattr(b, "type", "") == "text").strip()
@@ -258,15 +261,27 @@ def main():
         return 0
 
     ok = True
+    wp_link = None
     try:
-        link = post_to_wordpress(title, body)
-        print(f"[wordpress] 公開しました: {link}")
+        wp_link = post_to_wordpress(title, body)
+        print(f"[wordpress] 公開しました: {wp_link}")
     except Exception as e:
         ok = False
         print(f"[error] WordPress投稿に失敗: {e}", file=sys.stderr)
 
+    # WordPress公開に成功したら、ツイート末尾にその記事URLを付ける
+    # (X側ではURLは23重み固定なので、280に収まる場合のみ追加)
+    final_tweet = tweet
+    if wp_link and wp_link.startswith("http"):
+        candidate = f"{tweet}\n\n{wp_link}"
+        if weighted_len(candidate) <= TWEET_LIMIT * 2:
+            final_tweet = candidate
+            print(f"[info] ツイート末尾にWP記事URLを付与(重み付き{weighted_len(final_tweet)}/{TWEET_LIMIT*2})")
+        else:
+            print(f"[info] URL付与で重み{weighted_len(candidate)}>{TWEET_LIMIT*2}になるためURLなしで投稿")
+
     try:
-        resp = post_to_x(tweet)
+        resp = post_to_x(final_tweet)
         tid = resp.data.get("id") if resp and resp.data else "?"
         print(f"[x] 投稿しました: tweet id = {tid}")
     except Exception as e:
