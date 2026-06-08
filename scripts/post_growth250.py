@@ -29,7 +29,9 @@ import os
 import re
 import sys
 import json
+import time
 import datetime as dt
+from typing import Optional
 from zoneinfo import ZoneInfo
 from pathlib import Path
 
@@ -196,7 +198,7 @@ JSON以外は出力しないこと。"""
 
 
 # --------------------------------------------------------------------------
-# 3a. WordPress に本物の記事として投稿
+# 3a. WordPress に本物の記事として投稿（タイムアウト時はリトライ）
 # --------------------------------------------------------------------------
 def post_to_wordpress(title: str, body_html: str) -> str:
     base = os.environ["WP_BASE_URL"].rstrip("/")
@@ -205,14 +207,30 @@ def post_to_wordpress(title: str, body_html: str) -> str:
     cat = os.environ.get("WP_CATEGORY_ID")
     if cat:
         payload["categories"] = [int(cat)]
-    r = requests.post(
-        url,
-        json=payload,
-        auth=(os.environ["WP_USER"], os.environ["WP_APP_PASSWORD"]),
-        timeout=30,
-    )
-    r.raise_for_status()
-    return r.json().get("link", "(URL不明)")
+
+    # ロリポップは時々重い。タイムアウトしたら最大3回までリトライ。
+    last_err: Optional[Exception] = None
+    for attempt in range(1, 4):
+        try:
+            r = requests.post(
+                url,
+                json=payload,
+                auth=(os.environ["WP_USER"], os.environ["WP_APP_PASSWORD"]),
+                timeout=(30, 60),  # (connect, read)
+            )
+            r.raise_for_status()
+            return r.json().get("link", "(URL不明)")
+        except (requests.Timeout, requests.ConnectionError) as e:
+            last_err = e
+            wait = 15 * attempt  # 15秒 → 30秒 → 45秒
+            print(f"[warn] WP投稿 試行{attempt}/3 失敗({type(e).__name__})。{wait}秒待って再試行", file=sys.stderr)
+            if attempt < 3:
+                time.sleep(wait)
+        except Exception as e:
+            # タイムアウト系以外(認証エラー等)はリトライしても無意味なので即諦める
+            raise
+    # 3回とも失敗
+    raise last_err  # type: ignore
 
 
 # --------------------------------------------------------------------------
