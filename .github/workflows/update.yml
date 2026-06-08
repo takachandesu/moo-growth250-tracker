@@ -1,5 +1,4 @@
 name: Update Growth250 Data
-
 on:
   schedule:
     - cron: '30 6 * * 1-5'
@@ -9,29 +8,23 @@ on:
         description: "概況を投稿せず内容だけ確認する(データ更新とFTPは通常通り実行)"
         type: boolean
         default: false
-
 concurrency:
   group: update-growth250
   cancel-in-progress: false
-
 jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          
 
       - name: Install dependencies
         run: pip install yfinance pandas anthropic tweepy requests
-
       - name: Fetch data
         run: python scripts/fetch_data.py
-
       - name: Upload to Lolipop (FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -42,8 +35,8 @@ jobs:
           server-dir: ${{ secrets.LOLIPOP_FTP_PATH }}
           state-name: .ftp-deploy-growth250.json
           dangerous-clean-slate: false
-
       - name: 概況をWordPress＋Xに投稿
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           WP_BASE_URL: ${{ secrets.WP_BASE_URL }}
