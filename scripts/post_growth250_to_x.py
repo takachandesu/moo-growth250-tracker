@@ -143,8 +143,7 @@ def _build_tweet_with_topn(data, n: int) -> str:
     for i, item in enumerate(data["worst"][:n], 1):
         lines.append(format_line(i, item))
     lines.append("")
-    lines.append("詳しくはこちら")
-    lines.append(BLOG_URL)
+    lines.append("ニュース詳細はプロフィールのリンクと固定ポストに。")  # URLなし=通常ポスト課金
     return "\n".join(lines)
 
 
@@ -158,7 +157,7 @@ def build_tweet(data):
             return tweet
     # 最悪：TOP3でもオーバーしたらフッター(URL)を削って返す
     tweet = _build_tweet_with_topn(data, 3)
-    tweet = tweet.replace(f"\n\n詳しくはこちら\n{BLOG_URL}", "")
+    tweet = tweet.replace("\n\nニュース詳細はプロフィールのリンクと固定ポストに。", "")
     print(f"[warn] fallback: TOP3 + no footer (weighted={_weighted_length(tweet)})", flush=True)
     return tweet
 
