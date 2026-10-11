@@ -201,6 +201,46 @@ JSON以外は出力しないこと。"""
     return obj
 
 
+def _breadth_phrase(m: dict) -> str:
+    if m["up"] > m["down"]:
+        return "値上がり優勢"
+    if m["down"] > m["up"]:
+        return "値下がり優勢"
+    return "拮抗"
+
+
+def _movers_short(items, n: int) -> str:
+    return "、".join(
+        f"{x.get('name_jp', '')}({x.get('change_pct', 0):+.1f}%)" for x in items[:n]
+    )
+
+
+def template_content(m: dict) -> dict:
+    """★ Claude API が使えない時(残高切れ・障害など)の定型文 (2026/10/11 追加)。
+    データの数字をそのまま並べるだけなので、計算ミスや創作は起きない。"""
+    label = dt.datetime.now(JST).strftime("%-m/%-d")
+    phrase = _breadth_phrase(m)
+    title = (f"{label} グロース250銘柄概況：値上がり{m['up']}・値下がり{m['down']}で{phrase}")
+    body = (
+        f"<p>{label}のグロース250構成銘柄は、値上がり{m['up']}銘柄、値下がり{m['down']}銘柄、"
+        f"変わらず{m['flat']}銘柄(全{m['total']}銘柄)で、<strong>{phrase}</strong>となりました。</p>"
+        f"<p>上昇率上位は{_fmt_movers(m['best'][:5])}。"
+        f"下落率上位は{_fmt_movers(m['worst'][:5])}。</p>"
+    )
+    tweet = ""
+    for n in (3, 2, 1):
+        tweet = (
+            f"グロース250銘柄 {label}\n"
+            f"値上がり{m['up']}・値下がり{m['down']}・変わらず{m['flat']}({phrase})\n"
+            f"上昇: {_movers_short(m['best'], n)}\n"
+            f"下落: {_movers_short(m['worst'], n)}\n"
+            f"#グロース250 #新興市場"
+        )
+        if weighted_len(tweet) <= TWEET_BODY_LIMIT * 2:
+            break
+    return {"title": title, "body_html": body, "tweet": tweet}
+
+
 # --------------------------------------------------------------------------
 # 3a. WordPress に本物の記事として投稿（タイムアウト時はリトライ）
 # --------------------------------------------------------------------------
@@ -267,7 +307,16 @@ def main():
     print(f"[data] 値上がり{m['up']}/値下がり{m['down']}/変わらず{m['flat']}"
           f"(全{m['total']}) updated_at={m['updated_at']}")
 
-    content = generate_content(m)
+    # ★ Claude API が使えない時(残高0・障害など)は定型文で投稿を続ける (2026/10/11)
+    #   以前は ここで例外 → ワークフロー全体が失敗 → TOP3ツイート(Post Growth250 to X)まで止まっていた
+    try:
+        content = generate_content(m)
+        if not content.get("tweet", "").strip():
+            raise ValueError("Claude の出力にツイート本文がありません")
+    except Exception as e:
+        print(f"[warn] Claude での概況生成に失敗 → 定型文で投稿します: {type(e).__name__}: {e}",
+              file=sys.stderr)
+        content = template_content(m)
     title = content.get("title", "").strip()
     body = content.get("body_html", "").strip()
     tweet = content.get("tweet", "").strip()
